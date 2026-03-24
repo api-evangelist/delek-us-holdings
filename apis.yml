@@ -1,0 +1,7 @@
+aid: delek-us-holdings
+url: https://raw.githubusercontent.com/api-evangelist/delek-us-holdings/refs/heads/main/apis.yml
+modified: '2026-03-24'
+apis: []
+common:
+  - type: Website
+    url: https://www.delek-us-holdings.com
