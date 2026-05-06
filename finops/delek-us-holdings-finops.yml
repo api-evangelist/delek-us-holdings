@@ -1,5 +1,6 @@
 specification: FinOps Framework
 specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
 alignedWith:
   framework: FinOps Foundation Framework
   frameworkUrl: https://www.finops.org/framework/
@@ -8,145 +9,70 @@ alignedWith:
   dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
 provider: Delek US Holdings
 providerId: delek-us-holdings
-publisherName: Delek US Holdings
-serviceCategory: API
+publisherName: Delek US Holdings, Inc.
+serviceCategory: Energy
 created: '2026-05-04'
-modified: '2026-05-04'
+modified: '2026-05-05'
+reconciled: false
 tags:
-  - Asphalt
-  - Convenience Stores
-  - Downstream
   - Energy
   - Logistics
   - Petroleum
   - Refining
-  - Renewable Fuels
   - Retail
   - FinOps
-  - Cost Management
   - FOCUS
-description: FinOps framework definition for the Delek US Holdings API surface. Provides a FOCUS-aligned
-  mapping for cost allocation, usage measurement, and unit-economics reporting across the provider's APIs.
-principles:
-  - name: Visibility
-    description: Make API consumption costs visible to engineering, product, and finance teams in near
-      real-time.
-  - name: Allocation
-    description: Tag every chargeable API call with the consuming team, environment, application, and
-      feature so cost can be allocated.
-  - name: Optimization
-    description: Continuously evaluate request patterns, caching, batching, and tier selection to reduce
-      cost per useful unit of work.
-  - name: Accountability
-    description: Establish budget owners and chargeback or showback flows for each consuming team.
-domains:
-  - name: Understand Usage and Cost
-    capabilities:
-      - Data Ingestion
-      - Allocation
-      - Reporting and Analytics
-      - Anomaly Management
-  - name: Quantify Business Value
-    capabilities:
-      - Planning and Estimating
-      - Forecasting
-      - Budgeting
-      - Benchmarking
-      - Unit Economics
-  - name: Optimize Usage and Cost
-    capabilities:
-      - Architecting for Cloud
-      - Rate Optimization
-      - Workload Optimization
-      - Cloud Sustainability
-      - Licensing and SaaS
-  - name: Manage the FinOps Practice
-    capabilities:
-      - FinOps Practice Operations
-      - FinOps Education and Enablement
-      - Invoicing and Chargeback
-      - Onboarding Workloads
-      - Intersecting Disciplines
+description: 'FOCUS-aligned FinOps for Delek US Holdings: a downstream energy company with no
+  public developer API. No API invoice line exists. Commercial relationships flow through
+  product-supply, terminaling, midstream-logistics, and retail-fuel agreements rather than per-call
+  billing.'
+sources:
+  - https://www.delekus.com
+  - https://www.deleklogistics.com
+notes: No API consumption to meter. FinOps artifact retained for parity across providers; meters
+  are illustrative of the bilateral-integration shape rather than a billable surface.
 billingModel:
-  pricingCategory: Usage-Based
-  billingFrequency: Monthly
+  pricingCategory: Bilateral Contracts
+  billingFrequency: Per-Invoice
   billingCurrency: USD
   chargeCategories:
-    - Usage
     - Purchase
-    - Tax
-    - Credit
     - Adjustment
-  chargeFrequency: Recurring
 focusColumns:
   ServiceName: Delek US Holdings
-  ServiceCategory: Developer Tools / API
+  ServiceCategory: Energy
+  ServiceSubcategory: Downstream Petroleum
   ProviderName: Delek US Holdings
-  PublisherName: Delek US Holdings
-  InvoiceIssuerName: Delek US Holdings
-  PricingCategory: Usage-Based
-  PricingUnit: request
+  PublisherName: Delek US Holdings, Inc.
+  InvoiceIssuerName: Delek US Holdings, Inc.
+  PricingCategory: Contract
   BillingCurrency: USD
-  ChargeCategory: Usage
+  ChargeCategory: Purchase
+  RegionId: US
 meters:
-  - name: api_requests
-    description: Count of billable API requests
-    unit: request
-    aggregation: sum
+  - name: bilateral_integrations
+    description: Active partner integrations (EDI feeds, terminal-automation links, ticketing
+      bridges) across refining, logistics, and retail business lines.
+    unit: integration
+    aggregation: max
     dimensions:
-      - api
-      - endpoint
-      - tier
-      - region
-      - consumer
-  - name: data_egress
-    description: Bytes returned over the network in API responses
-    unit: GB
-    aggregation: sum
-    dimensions:
-      - api
-      - region
-      - consumer
-  - name: compute_seconds
-    description: Server-side compute consumed by the request, where applicable
-    unit: second
-    aggregation: sum
-    dimensions:
-      - api
-      - endpoint
-      - tier
-apis:
-  - name: Delek US Holdings Website
-    baseURL: ''
-    tags:
-      - Corporate
-      - Website
-    serviceName: Delek US Holdings Website
-    serviceCategory: API
-  - name: Delek US Holdings Investor Relations
-    baseURL: ''
-    tags:
-      - Earnings
-      - Investor Relations
-      - SEC Filings
-    serviceName: Delek US Holdings Investor Relations
-    serviceCategory: API
-  - name: Delek Logistics Partners
-    baseURL: ''
-    tags:
-      - Logistics
-      - Midstream
-      - Pipelines
-      - Terminals
-    serviceName: Delek Logistics Partners
-    serviceCategory: API
-unitEconomics:
-  - name: Cost per 1K Requests
-    metric: billed_cost / (api_requests / 1000)
-    target: TBD
-  - name: Cost per Active Consumer
-    metric: billed_cost / active_consumers
-    target: TBD
+      - partner
+      - business_line
+      - integration_type
+principles:
+  - name: Visibility
+    description: There is no API invoice. Track partner-integration spend through procurement,
+      logistics, and IT-services contracts rather than developer-portal usage.
+  - name: Allocation
+    description: Allocate any integration-related cost to the refining, logistics, or retail
+      business unit that owns the partner relationship.
+  - name: Optimization
+    description: Consolidate redundant EDI feeds across affiliates (Delek Logistics, retail
+      stores), prefer modern terminal-automation protocols, and retire legacy bridges to reduce
+      operational toil.
+  - name: Accountability
+    description: Designate a single integration owner per partner per business line so EDI map
+      maintenance and ticketing-bridge SLAs have a clear escalation path.
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
