@@ -15,7 +15,7 @@ url: https://raw.githubusercontent.com/api-evangelist/delek-us-holdings/refs/hea
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 specificationVersion: '0.19'
-xType: company
+kind: company
 access: 3rd-Party
 position: Consuming
 tags:
