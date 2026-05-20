@@ -78,6 +78,8 @@ apis:
       - type: Documentation
         url: https://www.deleklogistics.com
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/delek-us-holdings
   - type: Website
     url: https://www.delekus.com
   - type: InvestorRelations
