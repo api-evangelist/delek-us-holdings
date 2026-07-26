@@ -22,23 +22,8 @@ Delek US Holdings, Inc. (NYSE: DK) is a diversified downstream energy company he
 
 ## APIs
 
-### Delek US Holdings Website
 
-Public-facing corporate website for Delek US Holdings, Inc. providing company information, business segments, sustainability reports, and investor relations material.
 
-- **Human URL:** https://www.delekus.com
-
-### Delek US Holdings Investor Relations
-
-Investor relations site that publishes SEC filings, earnings releases, presentations, and event webcasts for Delek US Holdings.
-
-- **Human URL:** https://ir.delekus.com
-
-### Delek Logistics Partners
-
-Delek Logistics Partners, LP (NYSE: DKL) owns and operates crude oil and refined products pipelines, gathering systems, and terminal assets serving Delek US Holdings refineries and third-party customers.
-
-- **Human URL:** https://www.deleklogistics.com
 
 ## Common Properties
 

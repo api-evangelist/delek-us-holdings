@@ -13,7 +13,19 @@ description: >-
   through industry-standard EDI, terminal automation, and ticketing systems.
 url: https://raw.githubusercontent.com/api-evangelist/delek-us-holdings/refs/heads/main/apis.yml
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+    - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/delek-us-holdings.png
 specificationVersion: '0.19'
 kind: company
 access: 3rd-Party
@@ -30,54 +42,8 @@ tags:
   - Retail
   - Fortune 500
 created: '2026-03-24'
-modified: '2026-04-28'
-apis:
-  - aid: delek-us-holdings:delek-us-holdings-website
-    name: Delek US Holdings Website
-    description: >-
-      Public-facing corporate website for Delek US Holdings, Inc.
-      providing company information, business segments, sustainability
-      reports, and investor relations material. The site does not
-      expose a developer API.
-    humanURL: https://www.delekus.com
-    tags:
-      - Corporate
-      - Website
-    properties:
-      - type: Documentation
-        url: https://www.delekus.com
-  - aid: delek-us-holdings:delek-us-holdings-investor-relations
-    name: Delek US Holdings Investor Relations
-    description: >-
-      Investor relations site that publishes SEC filings, earnings
-      releases, presentations, and event webcasts for Delek US
-      Holdings. Programmatic access is available through EDGAR and
-      third-party financial data providers rather than a Delek API.
-    humanURL: https://ir.delekus.com
-    tags:
-      - Earnings
-      - Investor Relations
-      - SEC Filings
-    properties:
-      - type: Documentation
-        url: https://ir.delekus.com
-  - aid: delek-us-holdings:delek-us-holdings-logistics
-    name: Delek Logistics Partners
-    description: >-
-      Delek Logistics Partners, LP (NYSE: DKL) owns and operates crude
-      oil and refined products pipelines, gathering systems, and
-      terminal assets serving Delek US Holdings refineries and
-      third-party customers. DKL maintains its own corporate website
-      with operational and investor information.
-    humanURL: https://www.deleklogistics.com
-    tags:
-      - Logistics
-      - Midstream
-      - Pipelines
-      - Terminals
-    properties:
-      - type: Documentation
-        url: https://www.deleklogistics.com
+modified: '2026-07-25'
+apis: []
 common:
   - type: DomainSecurity
     url: security/delek-us-holdings-domain-security.yml
@@ -95,6 +61,8 @@ common:
     url: https://www.delekus.com/privacy-policy
   - type: TermsOfService
     url: https://www.delekus.com/terms-of-use
+  - type: ProductPage
+    url: https://www.deleklogistics.com
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
