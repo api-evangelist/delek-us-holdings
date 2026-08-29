@@ -12,6 +12,9 @@ description: >-
   website but does not publish a developer API; partner integrations occur
   through industry-standard EDI, terminal automation, and ticketing systems.
 url: https://raw.githubusercontent.com/api-evangelist/delek-us-holdings/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "The company provides investor relations and ESG reporting on its public website but does not publish a developer API; partner integrations occur through industry-standard EDI, terminal automation, and"
 type: Index
 deliveryModel:
   model: saas
