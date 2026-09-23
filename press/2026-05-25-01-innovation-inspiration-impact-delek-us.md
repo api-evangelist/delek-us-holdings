@@ -1,7 +1,9 @@
 ---
 title: Innovation. Inspiration. Impact. Delek US ...
 url: https://www.instagram.com/p/DPeJqAZETtD/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Delek US Holdings" press release artificial intelligence'
 position: 1
 source: serpapi-google

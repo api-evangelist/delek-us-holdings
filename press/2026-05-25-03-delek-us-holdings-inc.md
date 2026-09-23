@@ -1,7 +1,9 @@
 ---
 title: Delek US Holdings Inc
 url: https://www.reuters.com/company/delek-us-holdings-inc/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Delek US Holdings" press release artificial intelligence'
 position: 3
 source: serpapi-google
