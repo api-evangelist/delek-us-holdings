@@ -60,6 +60,12 @@ created: '2026-03-24'
 modified: '2026-07-25'
 apis: []
 common:
+  - type: Plans
+    url: plans/delek-us-holdings-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/delek-us-holdings-rate-limits.yml
+  - type: FinOps
+    url: finops/delek-us-holdings-finops.yml
   - type: Alias
     url: https://raw.githubusercontent.com/api-evangelist/delek-us-holdings/refs/heads/main/apis.yml
   - type: DomainSecurity
